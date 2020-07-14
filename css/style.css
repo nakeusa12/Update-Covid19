@@ -33,7 +33,7 @@ a {
 
 header {
   width: 100%;
-  height: 850px;
+  height: 150vh;
   background: url("../image/bg.svg");
   background-size: cover;
   background-position: center;
@@ -155,4 +155,57 @@ ul.menu li a {
 
 .data-positif {
   display: none;
+}
+
+/* *************************** */
+
+.info-corona {
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.text-corona {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  width: 80%;
+}
+
+.text-corona h2 {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.text-corona h2 span {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.text-corona p {
+  margin: 20px 0;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  font-weight: normal;
+}
+
+.text-corona .btn-info {
+  margin-top: 20px;
+  padding: 15px 0;
+  width: 230px;
+  background: linear-gradient(103.7deg, #6459fc -4.63%, #276fda 100%);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+  border-radius: 6px;
+  text-align: center;
+  color: var(--white);
+  transition: 0.5s initial;
+}
+
+.text-corona .btn-info:hover {
+  background: #6459fc;
 }
