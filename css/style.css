@@ -113,7 +113,6 @@ ul.menu li a {
 
 #kasus {
   position: relative;
-  overflow: hidden;
 }
 
 #kasus::before {
