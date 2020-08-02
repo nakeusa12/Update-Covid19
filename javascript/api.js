@@ -10,25 +10,22 @@ function getApiCorona() {
             let meninggalHTML = "";
             data.forEach(function (data) {
                 positifHTML += `
-                <div class="data-positif">
-                    <p>${data.positif}</p>
-                </div>
+                <h3>Jumlah Positif :</h3>
+                <p>${data.positif}</p>
               `;
               sembuhHTML += `
-              <div class="data-sembuh">
-                <p>${data.sembuh}</p>
-                </div>
+              <h3>Jumlah sembuh :</h3>
+              <p>${data.sembuh}</p>
               `;
               meninggalHTML += `
-              <div class="data-meninggal">
+              <h3>Jumlah meninggal :</h3>
               <p>${data.meninggal}</p>
-            </div>
               `
             });
 
-            document.querySelector(".data-positif").innerHTML = positifHTML;
-            document.querySelector(".data-sembuh").innerHTML = sembuhHTML;
-            document.querySelector(".data-meninggal").innerHTML = meninggalHTML;
+            document.querySelector(".positif").innerHTML = positifHTML;
+            document.querySelector(".sembuh").innerHTML = sembuhHTML;
+            document.querySelector(".meninggal").innerHTML = meninggalHTML;
           });
         }
       });

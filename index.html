@@ -56,27 +56,51 @@
       <div class="container kasus-data">
         <h2>Total Kasus</h2>
         <p>( Indonesia )</p>
-        <div class="box-data">
-          <div class="box positif">
-            <img src="./image/icon/iconsedih.svg" alt="positif" />
-            <h3>Positif</h3>
-            <div class="data-positif"></div>
-            
+      <div class="box-data">
+        <div class="card">
+          <div class="data data1">
+            <div class="content">
+              <img src="./image/icon/iconsedih.svg" alt="">
+              <h3>Positif</h3>
+            </div>
           </div>
-
-          <div class="box sembuh">
-            <img src="./image/icon/iconlove.svg" alt="Sembuh" />
-            <h3>Sembuh</h3>
-            <div class="data-sembuh"></div>
-           
-          </div>
-
-          <div class="box meninggal">
-            <img src="./image/icon/iconnangis.svg" alt="Meninggal" />
-            <h3>Meninggal</h3>
-            <div class="data-meninggal"></div>
+          <div class="data data2">
+            <div class="positif">
+              Loading...
+            </div>
           </div>
         </div>
+        <div class="card">
+          <div class="data data1">
+            <div class="content">
+              <img src="./image/icon/iconlove.svg" alt="">
+              <h3>Sembuh</h3>
+            </div>
+          </div>
+          <div class="data data2">
+            <div class="sembuh">
+              Loading...
+              
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="data data1">
+            <div class="content">
+              <img src="./image/icon/iconnangis.svg" alt="">
+              <h3>Meninggal</h3>
+            </div>
+          </div>
+          <div class="data data2">
+            <div class="meninggal">
+              Loading...
+              
+            </div>
+          </div>
+        </div>
+      </div>
+        
+
       </div>
     </section>
 
@@ -231,7 +255,7 @@
     <script src="/javascript/api.js"></script>
 
     <script>
-      // getApiCorona();
+      getApiCorona();
     </script>
   </body>
 </html>
